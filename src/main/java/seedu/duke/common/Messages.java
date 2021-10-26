@@ -109,13 +109,13 @@ public class Messages {
     /**
      * Used when invalid addappt is typed.
      */
-    public static final String ADD_APPOINTMENT_FORMAT_MESSAGE = "Add Appointment format: addappt n/[username] "
+    public static final String ADD_APPOINTMENT_FORMAT_MESSAGE = "Add Appointment format: addappt u/[username] "
             + "l/[location] d/[date] t/[time] {p/[purpose]}";
 
     /**
      * Used when invalid viewappt is typed.
      */
-    public static final String VIEW_APPOINTMENT_FORMAT_MESSAGE = "View Appointment format: viewappt n/[username]";
+    public static final String VIEW_APPOINTMENT_FORMAT_MESSAGE = "View Appointment format: viewappt u/[username]";
 
     /**
      * Used when medicine has been added.
@@ -125,33 +125,42 @@ public class Messages {
     /**
      * Used when invalid addmed is typed.
      */
-    public static final String ADD_MED_FORMAT_MESSAGE = "Add Medicine format: addmed n/[username] m/[medicine "
+    public static final String ADD_MED_FORMAT_MESSAGE = "Add Medicine format: addmed u/[username] m/[medicine "
             + "name] f/[frequency]";
 
     /**
      * Used when invalid viewmed is typed.
      */
-    public static final String VIEW_MED_FORMAT_MESSAGE = "View Medicine format: viewmed n/[username]";
+    public static final String VIEW_MED_FORMAT_MESSAGE = "View Medicine format: viewmed u/[username]";
 
     /**
      * Used when invalid addnok is typed.
      */
-    public static final String ADD_NOK_FORMAT_MESSAGE = "Add Next-Of-Kin information format: addnok n/[username] "
-            + "k/[name of next-of-kin] p/[phone number] e/[email] a/[address] r/[relationship]";
+    public static final String ADD_NOK_FORMAT_MESSAGE = "Add Next-Of-Kin information format: addnok u/[username] "
+            + "n/[name of next-of-kin] p/[phone number] e/[email] a/[address] r/[relationship]";
 
+    /**
+     * Used when invalid deletenok is typed.
+     */
     public static final String DELETE_NOK_FORMAT_MESSAGE = "Delete Next-Of-Kin information format: deletenok "
             + "u/[username] n/[name of next-of-kin]";
 
+    /**
+     * Used when invalid deletemed is typed.
+     */
     public static final String DELETE_MEDICINE_FORMAT_MESSAGE = "Delete medicine format: deletemed "
             + "u/[username] m/[name of medicine]";
 
+    /**
+     * Used when invalid deleteappt is typed.
+     */
     public static final String DELETE_APPOINTMENT_FORMAT_MESSAGE = "Delete appointment format: deleteappt "
             + "u/[username] d/[date] t/[time]";
 
     /**
      * Used when invalid viewnok is typed.
      */
-    public static final String VIEW_NOK_FORMAT_MESSAGE = "View Next-Of-Kin format: viewnok n/[username]";
+    public static final String VIEW_NOK_FORMAT_MESSAGE = "View Next-Of-Kin format: viewnok u/[username]";
 
     /**
      * Used when Next-Of_kin has been added.
@@ -168,13 +177,13 @@ public class Messages {
      * Used when invalid addnok is typed.
      */
     public static final String ADD_RECORD_FORMAT_MESSAGE = "Add Elderly Record Information format: addrec "
-            + "n/[username] p/[phone number] a/[address]";
+            + "u/[username] p/[phone number] a/[address]";
 
     /**
      * Used when invalid viewnok is typed.
      */
     public static final String VIEW_RECORD_FORMAT_MESSAGE = "View Elderly Record Information format: "
-            + "viewrec n/[username]";
+            + "viewrec u/[username]";
 
     /**
      * Used when vaccination status of the elderly is set to be vaccinated.

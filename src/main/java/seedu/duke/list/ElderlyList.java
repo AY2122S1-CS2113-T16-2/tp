@@ -298,6 +298,11 @@ public class ElderlyList {
         }
     }
 
+    /**
+     * Deletes the appointment that is input from userLine, from the given elderly.
+     *
+     * @param userLine Line that is entered by the user.
+     */
     public void deleteAppointment(String userLine) {
         try {
             if (!re.isValidDeleteAppointment(userLine)) {
@@ -315,11 +320,19 @@ public class ElderlyList {
         }
     }
 
+    /**
+     * Prints the details of the appointment that is deleted.
+     *
+     * @param deletedAppt Appointment that is deleted.
+     */
     public void printDeletedAppointment(Appointment deletedAppt) {
         System.out.println("These appointment details are now deleted:");
         System.out.println(deletedAppt);
     }
 
+    /**
+     * Prints message when there is no appointment that matches what is specified by user.
+     */
     public void printNoAppointment() {
         System.out.println("No Appointment found");
     }
@@ -396,6 +409,11 @@ public class ElderlyList {
         System.out.println(elderly.getNextOfKin());
     }
 
+    /**
+     * Deletes the Next-of-Kin information from the given elderly.
+     *
+     * @param userLine Line that is entered by the user.
+     */
     public void deleteNextOfKin(String userLine) {
         try {
             if (!re.isValidDeleteNok(userLine)) {
@@ -414,15 +432,28 @@ public class ElderlyList {
     }
 
 
+    /**
+     * Prints the details of the Next-of-Kin that will be deleted.
+     *
+     * @param deletedNok Details of Next-of-Kin that is deleted.
+     */
     public void printDeletedNextOfKin(NextOfKin deletedNok) {
         System.out.println("These details are now deleted:");
         System.out.println(deletedNok);
     }
 
+    /**
+     * Prints message when there is no Next-of-Kin information found, which is specified by the user.
+     */
     public void printNoNok() {
         System.out.println("No Next-Of-Kin found");
     }
 
+    /**
+     * Deletes the medicine details of the given elderly, given the medicine name in the userLine.
+     *
+     * @param userLine Line that is entered by the user.
+     */
     public void deleteMedicine(String userLine) {
         try {
             if (!re.isValidDeleteMedicine(userLine)) {
@@ -440,10 +471,18 @@ public class ElderlyList {
         }
     }
 
+    /**
+     * Prints message when there is no matches specified by the user.
+     */
     public void printNoMed() {
         System.out.println("No Medicine found");
     }
 
+    /**
+     * Prints the details of the medicine which is to be deleted.
+     *
+     * @param deletedMed Details of the medicine to be deleted.
+     */
     public void printDeletedMedicine(Medicine deletedMed) {
         System.out.println("These medicine details are now deleted:");
         System.out.println(deletedMed);

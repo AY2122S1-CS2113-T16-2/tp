@@ -40,7 +40,7 @@ given username.
 
 Example of usage:
 
-`addmed n/johntan123 m/paracetamol f/once a day`
+`addmed u/johntan123 m/paracetamol f/once a day`
 
 Expected outcome:
 
@@ -57,7 +57,7 @@ that elderly will be shown by the application.
 
 Example of usage:
 
-`viewmed n/johntan123`
+`viewmed u/johntan123`
 
 Expected outcome:
 
@@ -94,8 +94,8 @@ not specified by user.
 
 Example of usage:
 
-`addappt n/johntan123 l/khoo teck puat hospital d/02012021 t/1000`
-`addappt n/johntan123 l/khoo teck puat hospital d/05032021 t/1500 p/eye checkup`
+`addappt u/johntan123 l/khoo teck puat hospital d/02012021 t/1000`
+`addappt u/johntan123 l/khoo teck puat hospital d/05032021 t/1500 p/eye checkup`
 
 Expected outcome:
 
@@ -111,7 +111,7 @@ Appointment details for all appointments of the given elderly will be shown by t
 
 Example of usage:
 
-`viewappt n/johntan123`
+`viewappt u/johntan123`
 
 Expected outcome:
 
@@ -149,7 +149,7 @@ Specifically, the details are name, phone number, email, address and relationshi
 
 Example of usage:
 
-`addnok n/johntan123 k/tony lim p/98765432 e/tonylim@gmail.com a/123 Yishun Street r/son`
+`addnok u/johntan123 n/tony lim p/98765432 e/tonylim@gmail.com a/123 Yishun Street r/son`
 
 
 Expected outcome:
@@ -202,7 +202,7 @@ Specifically, the details are name, phone number and address.
 
 Example of usage:
 
-`addrec n/johntan123 p/93456781 a/123 Yishun Street`
+`addrec u/johntan123 p/93456781 a/123 Yishun Street`
 
 
 Expected outcome:
@@ -219,7 +219,7 @@ Next-Of-Kin details for all appointments of the given elderly will be shown by t
 
 Example of usage:
 
-`viewrec n/johntan123`
+`viewrec u/johntan123`
 
 Expected outcome:
 
